@@ -2,8 +2,11 @@
 $psversiontable
 get-command -name "process"
 Measure-Command { .\do_something.ps1 | out-default}
-gci -recurse temp.txt -erroraction ignore
 dir env:
 get-help 
+Get-ChildItem -Path "C:\YourDirectory" -Recurse -File -Filter "*.txt"
+gci -recurse temp.txt -erroraction ignore
+  
+
 
 </pre>
