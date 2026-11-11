@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>4 Column Div Layout</title>
-<style>
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    gap: 10px; /* space between columns */
-  }
-  .col {
-    background: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
-</head>
-<body>
-
-<div class="container">
-  <div class="col">Command</div>
-  <div class="col">Linux</div>
-  <div class="col">Windows</div>
-</div>
-
-</body>
-</html>
+Q) History
+doskey /history
+Get-History
+history 
+Q) Folder size
+dir /a /s
+Get-ChildItem -Recurse -Force | Measure-Object Length -Sum
+du -s /path/to/directory
