@@ -1,20 +1,20 @@
 <pre>
 Note:- The order listed is dos, powershell, linux.
   
-Q) How to list the history of commands ran so far?
+# list the history of commands ran so far
 doskey /history
 Get-History
 history 
 
-Q) How to get folder size?
+# get folder size
 dir /a /s
 Get-ChildItem -Recurse -Force | Measure-Object Length -Sum
 du -s /path/to/directory
 
-Q) How to find string in files recursively?
-  findstr /s /i "your_string" *.*
-  Select-String -Path "C:\path\to\folder\*" -Pattern "your_string" -recurse 
-  grep -r -i "your_string" /path/to/folder
+# find string in files recursively
+findstr /s /i "your_string" *.*
+Select-String -Path "C:\path\to\folder\*" -Pattern "your_string" -recurse 
+grep -r -i "your_string" /path/to/folder
 
 
   
