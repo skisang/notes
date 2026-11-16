@@ -1,12 +1,22 @@
 <pre>
-$psversiontable
+#Get powershell version
+  $psversiontable
+#Get process
 get-command -name "process"
+  
 Measure-Command { .\do_something.ps1 | out-default}
+#List all environment variables
 dir env:
-get-help 
+  
+#Get help for commands
+get-help
+
+#Find a string recursively
 Get-ChildItem -Path "C:\YourDirectory" -Recurse -File -Filter "*.txt"
 gci -recurse temp.txt -erroraction ignore
   
+#Unblock files recursively
+  Get-ChildItem -Path . -Recurse | Unblock-File
 
 
 </pre>
